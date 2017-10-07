@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+/* Stylesheet for Sushi Lovers 
+ * By Amberly Hoffman
+ */
+
+/* HTML Styles */
+
+
+
+/*Body Styles*/
+
+html {
+	background-image: url(../images/sushi_wallpaper.jpeg);
+
+}
+
+
+
+body { 
+	display:block;
+	width: 100%;
+	max-width: 1040px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 7px solid rgb(149,54,0);
+	border-top: none;
+	border-bottom: none; 
+	position: static;
+	border-collapse: collapse;
+}
+	
+	
+/*Navigation Styles*/
+
+nav {
+	font-family: 'Times New Roman', serif;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav.horizontalnavigation li {
+/*BUTTON SIZES */	
+	display: block;
+	float: left;
+	width: 25%;
+	text-decoration: none;
+	line-height: 2;
+	padding-bottom: 1em;
+}
+
+nav.horizontalnavigation li a:hover {
+	background-color:rgb(255,198,73);
+}
+
+a {
+	color: rgb(230,109,40);
+}
+
+a:hover {
+	color: rgb(255,198,73);
+}
+
+a:visited {
+	color: rgb(214, 37, 72);
+}
+
+/*---------------- COLLAPSEABLE MENU -----------------*/ 
+
+ul.collapse {
+	display: none;
+}
+
+ 
+a.accord:hover+ul.collapse, ul.collapse:hover {
+	display: block;
+	float: left;
+	width: 100%;
+} 
+
+
+
+.collapse > .submenu  {
+	width: 100%;
+	line-height: 1.375;
+}
+
+
+
+
+ul.collapse li {
+	width: 80%;
+	float: right;
+	border: none;
+	line-height: initial;
+	
+} 
+
+ul.collapse li.submenu {
+	padding: 0;
+	
+}
+
+ nav.horizontalnavigation > ul > li:hover:nth-of-type(4):after {
+	text-decoration: underline;
+		
+} 
+
+ nav.horizontalnavigation > ul > li:target {
+	display: block;
+} 
+
+nav.horizontalnavigation a {
+ /*"BUTTONS" STYLES HERE */	
+	display: block;
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	border: 3px solid rgb(149,54,0);
+	box-shadow: 0 0 1em .3em rgb(255,198,73) inset;
+	
+}
+
+/* Header Styles */
+ 
+ h1 {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2.2em;
+   font-weight: normal;
+   margin: 0.5em 0;
+ }
+ 
+ h2#footer {
+ 	display: inline;
+ 	float: left;
+ }
+ 
+  h2#footer:before {
+  	display: block;
+  	content: "";
+  	clear: both;
+  }
+ 
+ h2#fDOM {
+ 	display: inline;
+ 	float: right;
+ }
+
+
+/*Font Styles */
+
+@font-face {
+	font-family: speedingBrush;
+	src: url("../fonts/SpeedingBrush.ttf") format("truetype");
+}
+
+cite {
+	font-style: italic;
+	color: rgb(247,127,86);
+}
+
+/* Paragraph Styles */
+
+p {
+	display:block;
+	font-size: 1em;
+	line-height: 1.375;
+}
+
+.styled {
+	font-family: SpeedingBrush, 'Times New Roman', Times, Serif;
+	font-size: 1.2em;
+	line-height: 1.375em;
+	text-align: left;
+}
+
+	
+/*Images Styles*/	
+	
+body > header > img.banner {
+	display:block;
+	width: 100%;
+}	
+	
+
+
+/* DIV & Section Styles */
+
+div#body {
+	width: 95%;
+	margin: auto;
+} 
+
+/*List Styles */
+
+
+
+/*Footer Styles*/
+
+
+footer {
+	display: block;
+	text-align: center;
+	width: 100%;
+	border: 2px solid rgb(149,54,0);
+	line-height: 2;
+	margin-top: 5em;
+	clear: both;
+	
+}
+
+

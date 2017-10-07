@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+/* -------&&&&&&&&&&&&---------GENERAL PAGE STYLES--------------&&&&&&&&&&&&*/
+
+div#body {
+	clear: both;
+}
+
+* {
+	border-collapse: collapse;
+}
+
+
+
+/* -------&&&&&&&&&&&&--------- END GENERAL PAGE STYLES--------------&&&&&&&&&&&&*/
+
+
+/* -------------------------SECTION 1 STYLES ---------------*/
+
+div#section1 {
+ /*encompasses all of section 1 */
+	padding: 0 .5em 1em .8em;
+	text-align: left;
+	border-bottom: .2em solid rgb(149, 52, 0);
+	position: relative;
+}
+
+div#section1::after {
+	clear: both;
+	content: "";
+	display: table;
+}
+
+/* ----------------------HEADLINE STYLES, SECTION 1 ----------------- */
+/* Headline "What is sushi?" */
+div#col-1 > div.headline {
+	line-height: 2;
+	
+}
+
+/*First paragraph header "What is sushi"------------------- */
+h1.styled {
+	padding-top: .5em;
+}
+
+div.headline > h1:first-letter {
+ 	/* Styling for drop cap letter--------------------- */ 
+	float: left;
+	width: .5em;
+	font-size: 300%;
+	line-height: 80%;	
+} 	
+	
+/*-----------------------END HEADLINE STYLES SECTION 1 -------*/
+
+	
+/* ---------------------BEGIN SECTION ONE CONTENT --------------------*/
+div#col-1 {
+/*first column, section 1 */	
+	float: left;
+	clear: left;
+	width: 30%;
+	margin: auto;
+}
+
+div#col-2 {
+/* second column, section 1 */	
+	float: left;
+	width: 35%;
+	padding-left: .5em;	
+	margin: auto;
+}
+
+
+div#col-3 > img {
+/*image in column three, section 1 */	
+	width: 30%;
+	float: right;
+	border: .2em solid rgb(149,54,0);	
+	margin: auto;
+
+}
+
+article#sushi_ingredients li {
+	list-style-type: disc;
+	list-style-position: inside;
+	margin-left: 2.4em;
+	font-style: italic;
+	line-height: 1.4em;
+} 
+
+p.alignleft {
+	vertical-align: middle;
+
+}
+
+
+/* --------------------- END SECTION ONE CONTENT -------------*/
+
+
+/*----------------------- &&&& SECTION 2 STYLES &&& ------------------------ */
+
+
+
+/*-----------------------BEGIN HEADLINE STYLES SECTION 2 ---------------*/
+
+
+
+/*-----------------------END HEADLINE STYLES SECTION 2  -------*/
+
+
+	
+/* ---------------------BEGIN SECTION TWO CONTENT --------------------*/
+
+
+div#section2 { 
+/* encompasses all of section 2 */	                  
+	padding: 0 .8em 0 .8em;    
+	text-align: left;  
+	clear: both; 
+	border-top: .2em solid rgb(149, 52, 0);  
+	padding-bottom: 10em;
+	      
+}   
+
+div#section2::before {
+	clear: both;
+	content: "";
+	display: table;
+}
+  
+div#s2-col > div#s2headline > h1.alignright {
+/*headline "why is sushi so popular?" */	
+	line-height: 2;
+	padding-right: .5em;
+	text-align: left;
+}
+
+div#s2-col {
+ /*first column in section 2*/	
+	float: left;
+	width: 35%;
+	padding-right: .8em;
+}
+
+div#s2-col2 {
+/*second column in section 2 */ 	
+	float: left;
+	width: 32%;
+	
+	
+}
+
+div#s2-col3 > img {
+/* image in third column section 2 */ 	
+	float: right;
+	width: 30%;
+	border: .2em solid rgb(149, 52, 0);
+	margin-top: .8em;
+}
+
+/* -----------------------------------END SECTION TWO CONTENT -----------*/
+
+
+/*------------------------ MEDIA SECTION ----------------------------*/
+     
+ 
+section#media {
+ /*YOUTUBE VIDEO */	
+	display: flex;
+	width: 100%;
+	background: rgba(255,198,73, .65);
+
+}   
+
+section#media > iframe {
+	position: static;
+	margin: auto;
+
+	
+}     
+
+/* ------------------ END MEDIA SECTION -------------------*/
+

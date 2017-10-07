@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* Stylesheet for Sushi Lovers 
+ * By Amberly Hoffman
+ */
+
+
+/* ------------- DIV STYLES ------------ */
+
+div#body {
+	padding-top: 3.3em;
+}
+
+div#body p {
+	font-size: 1.2em;
+}
+
+div#sushiTypes {
+	padding-top: 1em;
+}
+
+div#sushiTypes h1 {
+	text-align: center;
+	font-style: italic;
+}
+
+div#sushiTypes img {
+	width: 100%;
+}
+
+div.maki {
+	float: left;
+	width: 35%;
+	
+}
+
+div.nigiri {
+	clear: right;
+	float: left;
+	width: 30%;
+}
+
+div.sashimi {
+	clear: right;
+	float: right;
+	width: 25%;
+}
+
+div#aboutStypes {
+	clear: both;
+}
+
+div#tableDiv {
+	padding-top: 1em;
+}
+
+
+
+/* -----------TABLE STYLES ---------- */
+
+table {
+	width: 100%;
+	line-height: 2.375em;
+	text-align: left;
+	
+	
+}
+table, th, td {
+    border-width: .2em;
+    border-color: rgb(247,127,86);
+    border-style: solid;
+    padding-left: .3em;
+    
+}
+
+tbody td {
+	border-collapse: collapse;
+	background-color: rgba(255,171,124, .6);
+	
+}
+
+td:hover {
+	background-color: rgb(255,198,73);
+	box-shadow: 5px 5px rgb(230,109,40);
+}
+
+.offBG {
+	background-color: rgb(247,127,86);
+}
+
+/* ------------STYLES FIRST ROW OF HEADERS -------------- */
+tr#headers {
+	font-size: 1.2em;
+	font-weight: bold;
+	background-color: rgb(206,232,148);
+} 
+
+caption {
+	font-size: 1.8em;
+}
+
+
+
+/* tbody > tr > th {
+	background-color: rgba(230,109,40, .7);
+} */
+
+
+tfoot {
+	background-color: white;
+	font-style: italic;
+}
+
+/* -----------------IMAGE STYLES---------------- */
+
+
+
+
+

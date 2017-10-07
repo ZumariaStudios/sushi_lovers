@@ -1,0 +1,206 @@
+@charset "utf-8";
+
+
+/* Stylesheet for Sushi Lovers 
+ * By Amberly Hoffman
+ */
+
+
+
+
+
+/* =======================
+ * Mobile Stlyes: 0px to 500px 
+ * =======================
+ * */ 
+ 
+@media only screen and (max-width: 500px)   {
+
+/* ------------------------- GENERAL STYLES -----------------*/
+body > table {
+	width: 100%;
+	display: block;
+}
+	
+html {
+	background: none;
+}
+
+body {
+	width: 100%;
+}
+
+
+div#body {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* -----------------------------INDEX.HTM ----------------- */
+
+div#section1, div#col-1 {
+	padding: 0;
+	margin: 0;
+}
+	
+nav.horizontalnavigation li {
+	display: block;
+	clear: both;
+	width: 100%;
+	padding: 0;
+}
+
+
+.styled {
+	font-family: 'Times New Roman', Times, Serif;
+	line-height: 1.375em;
+	font-size: 1.8em;
+	text-align: left;
+}
+
+div.headline > h1:first-letter {
+	font-family: 'Times New Roman', Times, Serif;
+	font-size: 100%;
+	float: none;
+}
+
+/* * {
+	font-family: 'Times New Roman', Times, Serif;
+	font-size: 1.2em;
+	line-height: 1.375em;
+	text-align: left;
+} */
+
+/*first column, section 1 */
+
+div#col-1 {
+	clear: both;
+	width: 100%;
+}
+
+div#col-2 {
+
+	clear: both;
+	width: 100%;
+	margin-bottom: .5em;
+}
+
+
+
+div#col-3 > img {
+	
+	width: 100%;
+	clear: both;
+
+
+}
+
+div#s2-col {
+	
+	clear: both;
+	width: 100%;
+}
+
+div#s2-col2 {
+	
+	clear: both;
+	width: 100%;	
+}
+
+
+
+div#s2-col3 > img {
+	
+	clear: both;
+	width: 100%;
+} 
+
+section#media > iframe {
+	clear: both;
+	max-width: 640px;
+	max-height: 360px;
+	width: 100%;
+	height: 100%;
+	background: none;
+}
+
+section#media {
+	background: none;
+	width: 98%;
+}
+
+/* ----------------------------------CONCEPT FOR SELECTING ALL FLOATED ELEMENTS
+ *[float: right] {
+	clear: both;
+	width: 100%;
+}
+
+*[float: left] {
+	clear: both;
+	width: 100%;
+} ------------------------------- CONCEPT FOR SELECTING ALL FLOATED ELEMENTS */
+
+/* ------------------------------------------ TABLE STYLES -------------------- */
+
+table tr, td, th {
+	display: block;
+	text-align: right;
+}  
+
+tr#headers {
+	display: none;
+}
+
+ table td:before {
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+    }
+    
+td#disclaimer {
+	text-align: left;
+}
+
+/* ---------------------------------------- FORM  STYLES --------------------- */ 
+
+
+input[type=text],
+  input[type=email],
+  input[type=radio],
+  input[type=checkbox],
+  textarea,
+  select {
+    width: 100%;
+    float: left;
+    clear: both; 
+  }
+
+
+}
+ 
+
+ 
+ /* =======================
+ * Tablet Styles 501px and greater
+ * =======================
+ */ 
+ 
+ @media only screen and (min-width: 501px)  {
+ 	nav.horizontal ul {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+}
+
+nav.horizontal li {
+	-webkit-flex: 1 1 auto;
+	flex: 1 1 auto;
+}
+ }
+
+/*=======================
+  * Desktop Styles: 769px and greater
+   ========================
+  */

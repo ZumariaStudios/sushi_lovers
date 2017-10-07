@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+
+<!--
+		 New Perspectives on HTML5 and CSS3, 7th Edition
+		 Final Project
+		 Author: Amberly Hoffman
+		 Date: 11 July 2017
+		 
+		 Filename: index.htm
+		-->
+
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Sushi Lovers" />
+		<meta name="keywords" content="sushi, how-to, food, cooking, health, tutorial" />
+		<meta name="author" content="Amberly Hoffman" />
+		<meta name="viewport" content="width-device-width, initial-scale=1" />
+		<title>Amberly Hoffman's Project</title>
+		<link href="css/sl_reset.css" rel="stylesheet" />
+		<link href="css/template_stylesheet.css" rel="stylesheet" />	
+		<link href="css/index_ss.css" rel="stylesheet" />
+		<link href="css/form_stylesheet.css" rel="stylesheet" />
+		<link href="css/print_styles.css" rel="stylesheet" media="print" />
+		<link href="css/mobile.css" rel="stylesheet" media="screen" />
+		<script src="scripts/DOM.js" defer></script>
+		<script src="scripts/modernizr-2.8.3.js" defer></script>
+	</head>
+<!-- Header content --> 	
+<body> 
+	<header>
+		<img class="banner" src="images/header_image.jpg" alt="sushi platter" usemap="#map" />
+		<map name="map" id="map">
+			<area alt="imageMap" href="index.htm" shape="poly" coords="5,3,1396,4,1395,676,11,672" />
+		</map>
+		<nav class="horizontalnavigation">
+			<ul>
+				<li><a href="sl_pr_table.html">Popular Types of Sushi</a></li>
+				<li><a href="#">Where can I get sushi?</a></li>
+				<li><a href="#">FREE Sushi Catalog</a></li>
+				<li><a href="#" class="accord">More Web Resources</a>
+					<ul class="collapse">
+						<li class="submenu"><a href="http://www.thesushilegend.com/">The Sushi Legend</a></li>
+						<li class="submenu"><a href="https://www.thesushigeek.com/">The Sushi Geek</a></li>
+						<li class="submenu"><a href="https://www.youtube.com/user/MakeSushi1">How to Make Sushi</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<!--End header content -->	
+
+<!-- BEGIN BODY CONTENT --> 
+
+<div id="body">
+	<h1 class="styled"><cite>FREE</cite> Sushi Supplies Catalog</h1>
+	  <p><br/>Receive a complimentary copy of our supply catalog that will empower you to make delicious sushi from the convenience of your 		own kitchen.<br/></p>
+	  <p><br/>Simply fill out the form below and your FREE Sushi Supplies Catalog will arrive in your mailbox within 2-5 business days. In the meantime, if you would like to receive a copy of our free eBook, <cite>Make Your Own Sushi</cite>, simply check the 			box at the end of the form.<br><br></p>
+<div id="form">
+	<form id="catalog" action="http://www.example.com/sushilovers/survey" method="post">
+		<fieldset id="contactInfo">
+			<legend>Contact Information</legend>
+			 <div class="formRow">
+			 	<label for="name">Name*</label>
+			 	  <input name="custName" id="name" type="text" placeholder="John Smith" required autofocus />	  
+			 </div>
+			 <div class="formRow">
+			 	 <label for="street">Street Address*</label>
+			 	  <input name="custStreet" id="street" type="text" placeholder="123 Happy St." required />
+			 </div>
+			 <div class="formRow">
+			 	 <label for="street2">Unit Number:</label>
+			 	  <input name="custStreet2" id="street2" type="text" placeholder="Apartment 2" />	  
+			 </div>
+			 <div class="formRow">
+			 	<label for="city">City*</label>
+			 	 <input name="custCity" id="city" type="text" placeholder="Neverland" required />
+			 </div>
+			 <div class="formRow">
+			 	<label for="state">State*</label>
+			 	 <input name="custState" id="state" type="text" placeholder= "OH" required />
+			 </div>
+			 <div class="formRow">
+			 	<label for="zip">Postal Code*</label>
+			 	 <input name="custZip" id="zip" type="text" placeholder="nnnnn (-nnnnn)" pattern="^\d{5}(-\d{4})?$" required />
+			 </div>
+			 <div class="formRow">
+			 	<label for="country"></label>
+			 	 <input name="country" id="country" type="hidden" value="USA" />
+			 </div>
+			 <div class="formRow">
+			 	<label for="email">Email*</label>
+			 	 <input name="custEmail" id="email" type="email" placeholder="johnsmith@gmail.com" required />
+			 </div>	
+			 
+		</fieldset>
+		<fieldset id="demographics">
+		  <legend>Special Instructions</legend>
+			<div class="additionalInfo">
+		    	<label for="deliveryInst"> <br>If you have any special delivery instructions, please include them here:</label>
+		  <textarea name="instructions" id="deliveryInst"></textarea>
+		    </div>		
+			
+			
+		 		 
+		</fieldset>	
+		<fieldset id="additionalInfo">
+		 <legend>Additional Information</legend>	
+			<div class="additionalInfo">
+			  <dl>	
+				<dt><label>Have you ever had sushi before?<br> </label></dt>
+				 <dt><label for="fYes">Yes</label></dt>
+				 <dd><input name="sBefore" id="fYes" value="Yes" type="radio" /></dd>
+				 <dt><label for="fNo">No</label></dt>
+				 <dd><input name="sBefore" id="fNo" value="no" type="radio" /></dd>
+			  </dl>
+			 
+			</div>
+			<div class="additionalInfo">
+				<label for="catalogDetails">What will you be using this catalog for? <br> <br>(select all that apply)</label>
+				 <select name="custCatalogDetails" id="catalogDetails" size="4" multiple >
+				  <option value="purchaseSelf" title="I want to purchase something for myself.">I want to purchase something for myself.</option>
+				  <option value="purchaseGift" title="I want to purchase something as a gift.">I want to purchase something as a gift.</option>
+				  <option value="justLooking" title="I'm just looking">I'm just looking.</option>
+				  <option value="sendElse" title="I'm sending this to someone else I think would enjoy it.">I'm sending this to someone else I think would enjoy it.</option>
+				 </select>
+			</div>	
+		    <div class="additionalInfo">
+				<input name="cookbook" id="cookYes" value="yes" type="checkbox" />
+				<label for="cookYes">I would also like to receive the <cite>FREE</cite> Sushi Lovers cookbook!</label>
+			</div>
+		</fieldset>
+	<div id="buttons">
+	  	<input type="submit" value="Submit My Survey" />
+	  	<input type="reset" value="Cancel" />	
+	</div>	  
+	</form>
+</div>	
+</div>
+
+
+<!-- footer -->			
+<footer> 
+	<h2 id="DOM">Thanks for visiting Sushi Lovers! | <a href="mailto:abc@gmail.com">Contact Us</a> |  </h2>
+</footer>
+
+<!-- end footer -->
+ </body>
+</HTML>

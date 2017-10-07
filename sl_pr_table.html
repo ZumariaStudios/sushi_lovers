@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+
+<!--
+		 New Perspectives on HTML5 and CSS3, 7th Edition
+		 Final Project
+		 Author: Amberly Hoffman
+		 Date: 11 July 2017
+		 
+		 Filename: index.htm
+		-->
+<HTML>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Sushi Lovers" />
+		<meta name="keywords" content="sushi, how-to, food, cooking, health, tutorial" />
+		<meta name="author" content="Amberly Hoffman" />
+		<meta name="viewport" content="width-device-width, initial-scale=1" />
+		<title>Amberly Hoffman's Project</title>
+		<link href="css/sl_reset.css" rel="stylesheet" />
+		<link href="css/template_stylesheet.css" rel="stylesheet" />
+		<link href="css/table_stylesheet.css" rel="stylesheet" />
+		<link href="css/print_styles.css" rel="stylesheet" media="print" />	
+		<link href="css/mobile.css" rel="stylesheet" media="screen" />
+		<script src="scripts/DOM.js" defer></script>
+		<script src="scripts/modernizr-2.8.3.js" defer></script>
+	</head>
+<!-- Header content --> 	
+<body> 
+	<header>
+		<img class="banner" src="images/header_image.jpg" alt="sushi platter" usemap="#map" />
+		<map name="map" id="map">
+			<area alt="imageMap" href="index.htm" shape="poly" coords="5,3,1396,4,1395,676,11,672" />
+		</map>
+		<nav class="horizontalnavigation">
+			<ul>
+				<li><a href="sl_pr_table.html">Popular Types of Sushi</a></li>
+				<li><a href="#">Where can I get sushi?</a></li>
+				<li><a href="form_page_catalog.html">FREE Sushi Catalog</a></li>
+				<li><a href="#" class="accord">More Web Resources</a>
+					<ul class="collapse">
+						<li class="submenu"><a href="http://www.thesushilegend.com/">The Sushi Legend</a></li>
+						<li class="submenu"><a href="https://www.thesushigeek.com/">The Sushi Geek</a></li>
+						<li class="submenu"><a href="https://www.youtube.com/user/MakeSushi1">How to Make Sushi</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+<!--End header content --> 
+
+<!--Begin main body segment -->
+<div id="body">
+	<h1 class="styled">Popular Types of Sushi for Beginners</h1>
+	  <p>If you're just rolling in (no pun intended) to the sushi party, it can be intimidating to know where to start - there is such a wide selection! The first thing to note is there are three main types of sushi:</p>
+<div id="sushiTypes">
+  <div class="maki">
+  	<h1>Maki</h1>	
+	<img src="images/maki_pieces.jpg" alt="pieces of a maki roll" />
+  </div>
+  <div class="nigiri">
+  	<h1>Nigiri</h1>	
+	<img src="images/nigiri.jpg" alt="nigiri pieces" />
+  </div>
+  <div class="sashimi">
+  	<h1>Sashimi</h1>
+	<img src="images/sashimi.jpg" alt="sashimi" />
+  </div>
+  <div id="aboutStypes">
+  	<p>While these are the main categories of sushi, they are not the only ones. Another popular style of sushi is known as the "hand roll". The hand roll is usually a single piece, and can often customized for the customer's preferences. However, for beginners, you generally start by trying one of the three styles above. </p>
+  	<p> <br> What type you start with exactly is entirely up to you! We recommend any of the following as a good first choices with mild flavors and agreeable textures. </p>
+  </div>
+  	
+</div>		
+<div id="tableDiv">
+   	<table>
+	  <caption>Beginner Sushi*</caption>
+	   <colgroup id="firstCol">
+	    <col span="6" />
+	   </colgroup>
+		 	<thead>
+				<tr id="headers">
+					<th>Name</th>
+					<th>Style of Sushi</th>
+					<th>Vegetarian?</th>
+					<th>Filling</th>
+					<th>Filling</th>
+					<th>Filling</th>
+				</tr>
+			</thead>
+	<!-- Using Data Labels for mobile compatibility table -->		
+			<tbody>
+				<tr class="offBG">
+					<td data-label="Name">California Roll</th>
+					<td data-label="Style">Maki</td>
+					<td data-label="Vegetarian">No</td>
+					<td data-label="Filling">Crab</td>
+					<td data-label="Filling">Cucumber</td>
+					<td data-label="Filling">Cream Cheese</td>
+				</tr>
+				<tr>
+					<td data-label="Name">Philly (Philadephia) Roll</th>
+					<td data-label="Style">Maki</td>
+					<td data-label="Vegetarian">No</td>
+					<td data-label="Filling">Salmon</td>
+					<td data-label="Filling">Cream Cheese</td>
+					<td data-label="Filling">Avocado</td>
+				</tr>
+				<tr class="offBG">
+					<td data-label="Name">Sweet Potato Roll</th>
+					<td data-label="Style">Maki</td>
+					<td data-label="Vegetarian">Yes</td>
+					<td data-label="Filling" colspan="3">Tempura (deep fried) sweet potato</td>
+				</tr>
+				<tr>
+					<td data-label="Name">Spicy Tuna Roll</th>
+					<td data-label="Style">Maki</td>
+					<td data-label="Vegetarian">No</td>
+					<td data-label="Filling">Tuna</td>
+					<td data-label="Filling" colspan="2">Spicy Sauce</td>
+				</tr>
+				<tr class="offBG">
+					<td data-label="Name">Tomago (sweet egg)</th>
+					<td data-label="Style">Nigiri</td>
+					<td data-label="Vegetarian">Yes</td>
+					<td data-label="Filling" colspan="3">Sweet Egg</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td id="disclaimer" colspan="6">*Fillings are general guidelines, but may vary from restaurant to restaurant.</td>
+				</tr>
+			</tfoot>
+		</table>
+</div>
+   <p><br>To find a local restaurant near you that serves one of the above types of beginner sushi, we recommend checking out <a href="http://www.yelp.com" target="_blank">Yelp</a> and reading the reviews. Remember, make sure everything is fresh!  </p>
+
+</div>
+	
+<footer> 
+	<h2 id="DOM">Thanks for visiting Sushi Lovers! | <a href="mailto:abc@gmail.com">Contact Us</a> |  </h2>
+</footer>
+<!-- INSERT JAVASCRIPT DOM FOR DATE MODIFIED ^^^^^^ -->
+ </body>
+</HTML>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+/* Stylesheet for Sushi Lovers 
+ * By Amberly Hoffman
+ */
+
+
+/* --------- FORM STYLES ---------- */
+
+form#catalog {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	
+
+}
+
+form#catalog > fieldset {
+	background-color: white;
+	-webkit-flex: 1 1 300px;
+	flex: 1 1 300px;
+	font-size: 0.85em;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid rgb(149,54,0);
+	font-size: 1em;
+}
+
+/* Div styles */
+
+div.formRow {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	margin: 7px 0px;
+}
+
+div.formRow > * {
+	-webkit-flex: 1 1 150px;
+	flex: 1 1 150px;
+}
+
+.additionalInfo {
+	padding: .5em 0 .5em 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+dt {
+	float: left;
+	clear: both;
+}
+
+/* Text Area Styles */
+
+textarea {
+	margin-top: 10px;
+	height: 100px;
+	width: 95%;
+}
+
+/* ------ LEGEND STYLES --- */
+
+legend {
+	box-shadow: 0 0 1em .3em rgb(255,198,73) inset;
+	padding: 5px;
+	border: 2px solid rgb(149,54,0);
+	width: 90%;
+	color: black;
+	font-size: 1.2em;
+}
+
+
+/* Form Button Styles */
+
+div#buttons {
+	text-align: center;
+	width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+	font-size: 1.2em;
+	padding: 5px;
+	margin: 15px;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgba(206,232,148, .4);
+}
+
+input#name:focus:valid,
+input#zip:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid {
+	background: rgba(220, 255, 220, .4);
+}
+
+input#name:focus:invalid,
+input#zip:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid {
+	background: rgba(255,198,73, .4);
+}

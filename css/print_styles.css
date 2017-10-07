@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/* Stylesheet for Sushi Lovers 
+ * By Amberly Hoffman
+ */
+
+
+
+/* PRINT STYLES */
+@page {
+	size: 8.5in 11in;
+	margin: 0.5in;
+}
+
+
+@media print {
+	
+
+
+html, body {
+	background-color: white;
+	background-image: none;
+	border: none !important;
+}	
+
+/* ---------------- HIDDEN ELEMENTS ---------------- */ 
+
+header, border, section#media, footer, img, div#s2-col3, div#col-3{
+	display: none;
+}
+
+/* -----------FONT STYLES ---------*/
+
+body {
+	font: 13pt "Times New Roman", Times, Serif;
+	line-height: 1.375;
+	color: black;
+}	
+
+h1 {
+	font-size: 24pt;
+}	
+
+h2, h3, h4 {
+	font-size: 14pt;
+	margin-top: 25px;
+}
+
+/* ----------PAGE BREAK CONTROL *---------*/
+
+a {
+	page-break-inside: avoid;
+	color: black;
+}
+
+img {
+	page-break-inside: avoid;
+	page-break-after: avoid;
+}
+
+table, pre { page-break-inside:avoid }
+ul, ol, dl  { page-break-before:avoid }
+	
+}
+
+a[href^=http]:after {
+      content:" <" attr(href) "> ";
+      word-wrap: break-word;
+} 
+
+/* ---------------TABLE STYLES ------------------*/
+
+table {
+	page-break-inside: avoid;
+	border-style: solid;
+	border-color: black;
+}
+
+p {
+	orphans: 3;
+	widows: 3;
+}
+
+
+/* -------------- MISC STYLES ------ */
+

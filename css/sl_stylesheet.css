@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+/* Stylesheet for Sushi Lovers 
+ * By Amberly Hoffman
+ */
+
+
+/* ---------------------------------&&&&&&& BASE STYLESHEET FOR ALL PAGES &&&&&&&-----------------------------------*/
+
+
+/* HTML Styles */
+
+html {
+	background-image: url(../images/sushi_wallpaper.jpeg);
+
+}
+
+/*Body Styles*/
+
+
+
+body { 
+	display:block;
+	width: 100%;
+	max-width: 1040px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: white;
+	border: 2px solid rgb(149,54,0);
+	border-top: none;
+	border-bottom: none; /* BODY BORDER, RE-ADDRESS WITH COLORS */
+	}
+	
+	
+/*Navigation Styles*/
+
+nav {
+	font-family: 'Times New Roman', serif;
+	text-align: center;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav.horizontalnavigation li {
+/*BUTTON SIZES */	
+	display: block;
+	float: left;
+	width: 25%;
+	text-decoration: none;
+	line-height: 2;
+}
+
+
+nav.horizontalnavigation a {
+ /*"BUTTONS" STYLES HERE */	
+	display: block;
+	color: black;
+	text-decoration: none;
+	background-color: white;
+	border: 2px solid rgb(149,54,0);
+	
+}
+
+/* Header Styles */
+ 
+ h1 {
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 2.2em;
+   font-weight: normal;
+   margin: 0.5em 0;
+ }
+ 
+
+
+/*Font Styles */
+
+@font-face {
+	font-family: speedingBrush;
+	src: url("../fonts/SpeedingBrush.ttf") format("truetype");
+}
+
+cite {
+	font-style: italic;
+}
+
+/* Paragraph Styles */
+
+p {
+	display:block;
+}
+
+	
+/*Images Styles*/	
+	
+body > header > img {
+	display:block;
+	width: 100%;
+}	
+	
+
+
+/* DIV & Section Styles */
+
+ 
+
+/*List Styles */
+
+
+
+/*Footer Styles*/
+
+
+footer {
+	display: block;
+	text-align: center;
+	width: 100%;
+	border: 2px solid rgb(149,54,0);
+	line-height: 2;
+	
+}
+
+
